@@ -22,6 +22,9 @@
 		</div>
 		<hr style="background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 		border:0px;height:1px;">
-		Back to <a href="/rango/">Index</a>
+		Back to <a href="/rango/">Index</a><br />
+		{% if category %}
+		Create a <a href="/rango/category/{{ category.slug }}/add_page/">new page
+		{% endif %}
 	</body>
 </html>
